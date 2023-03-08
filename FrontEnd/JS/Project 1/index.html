@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS intro</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Introduction for the user -->
+      <h1 id="title">Welcome!</h1>
+      <p>Please fill the form bellow and press <strong>SUBMIT</strong></p>
+
+      <!-- Form to be fullfilled by the user -->
+      <form action="">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" />
+        <br /><br />
+
+        <label for="birthDate">Date of Birth: </label>
+        <input type="date" name="birthDate" id="birthDate" />
+        <br /><br />
+
+        <button type="submit" id="button">SUBMIT</button>
+      </form>
+
+      <!-- Card with user informations -->
+      <div class="card">
+        <img src="./images/avatar.png" alt="Avatar image" />
+        <div class="info-container">
+          <h3>Name: <span id="cardName"></span></h3>
+          <h3>Birth: <span id="cardDate"></span></h3>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

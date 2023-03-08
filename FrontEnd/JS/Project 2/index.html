@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Weather Forecast</h1>
+    <p>Weather data are from open-meteo.com</p>
+    <form id="city-form">
+      <label for="longtitude">Enter the city longtitude:</label>
+      <input type="text" id="longtitude" value="14.42" />
+      <br /><br />
+      <label for="latitude">Enter the city latitude:</label>
+      <input type="text" id="latitude" value="50.09" />
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="forecast-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

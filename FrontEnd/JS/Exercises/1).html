@@ -1,0 +1,15 @@
+<form>
+  <input type="text" id="input1" />
+  <input type="text" id="input2" />
+  <button type="submit" id="submitButton">Submit</button>
+</form>
+
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const input1 = document.getElementById("input1").value;
+    const input2 = document.getElementById("input2").value;
+    alert(`Input 1: ${input1}\nInput 2: ${input2}`);
+  });
+</script>

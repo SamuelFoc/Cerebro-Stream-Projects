@@ -1,0 +1,28 @@
+<ul id="todoList"></ul>
+<input type="text" id="todoInput" />
+<button id="addButton">Add</button>
+
+<script>
+  const todoList = document.getElementById("todoList");
+  const todoInput = document.getElementById("todoInput");
+  const addButton = document.getElementById("addButton");
+  let todos = [];
+
+  addButton.addEventListener("click", function () {
+    const todo = todoInput.value;
+    todos.push(todo);
+    todoList.innerHTML += `<li>${todo} <button class="removeButton">Remove</button></li>`;
+    todoInput.value = "";
+  });
+
+  todoList.addEventListener("click", function (event) {
+    if (event.target.className === "removeButton") {
+      const todoLi = event.target.parentElement;
+      const todoIndex = Array.from(todoLi.parentElement.children).indexOf(
+        todoLi
+      );
+      todos.splice(todoIndex, 1);
+      todoLi.remove();
+    }
+  });
+</script>
