@@ -1,0 +1,28 @@
+/* Display as a flex container */
+.container-flex {
+  display: flex;
+}
+/* Set all child element of a container-flex with class box to have a bcg-color and border */
+.container-flex > .box {
+  background-color: rgb(0, 170, 0);
+  border: 1px solid black;
+}
+
+.display-block {
+  display: block;
+}
+
+.container-block > .box {
+  background-color: rgb(0, 145, 255);
+  border: 1px solid black;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+}
+
+.container-grid > .box {
+  background-color: rgb(240, 105, 47);
+  border: 1px solid black;
+}

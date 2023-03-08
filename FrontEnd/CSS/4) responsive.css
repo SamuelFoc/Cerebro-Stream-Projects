@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Set the title container to be centered and have different margin for every side */
+.title-container {
+  text-align: center;
+  margin: 50px 0 100px 0;
+}
+
+/* Set up the grid with auto filling due to the width of a window */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  row-gap: 10px;
+  column-gap: 20px;
+
+  /* Add centering to the grid-container */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the color of text in a box and the background and border colors */
+.container-grid > .box {
+  background-color: rgb(57, 57, 57);
+  border: 5px solid rgb(252, 80, 0);
+
+  color: white;
+  text-align: center;
+}
+
+/* Special styling valid while the max. width of a window is less or equal 600px */
+@media only screen and (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: repeat(1, calc(100vw - 20px));
+    row-gap: 40px;
+    column-gap: 0px;
+  }
+}

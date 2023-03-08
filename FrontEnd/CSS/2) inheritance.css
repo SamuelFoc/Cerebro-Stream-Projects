@@ -1,0 +1,15 @@
+/* Apply the red color to all elements inside the html page */
+* {
+  color: red;
+}
+
+/* The CSS is translated from the top to the bottom so now we can rewrite the code above */
+h1 {
+  color: blue;
+}
+
+/* As I mentioned we can do this again and again until our last change is at the bottom of the CSS file */
+/* As you can see the color of the text is green, even though we initially set it to a different color */
+.title {
+  color: green;
+}

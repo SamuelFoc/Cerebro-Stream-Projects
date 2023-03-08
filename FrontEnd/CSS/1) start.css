@@ -1,0 +1,27 @@
+/* Using asterisk you are able to add styling to all elements at once */
+* {
+  /* Centering the text */
+  text-align: center;
+  /* Set the width to be 500px */
+  width: 500px;
+  /* Set inner padding to 10px on Y axis and 20px on X axis */
+  padding: 10px 20px;
+}
+
+/* This is how Tag selection looks like */
+h1 {
+  color: red;
+  background-color: rgb(61, 61, 61);
+}
+
+/* This is a Class selection, using .classname */
+.title {
+  color: blue;
+  background-color: rgb(11, 192, 224);
+}
+
+/* This is ID selection, using #identifier */
+#title {
+  color: green;
+  background-color: rgb(215, 213, 217);
+}
