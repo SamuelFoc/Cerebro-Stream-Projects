@@ -1,0 +1,29 @@
+.container-title {
+  text-align: center;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5vh 20vw;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  min-height: 20vh;
+  width: 100vw;
+
+  background-color: grey;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Layout</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Enter your message"
+      ></textarea>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="USA">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label for="male"
+          ><input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+          />Male</label
+        >
+        <label for="female"
+          ><input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          />Female</label
+        >
+        <label for="other"
+          ><input
+            type="radio"
+            id="other"
+            name="gender"
+            value="other"
+          />Other</label
+        >
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
